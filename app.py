@@ -9,7 +9,7 @@ load_dotenv()
 app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY", "supersecretkey")
 
-stripe.api_key = os.getenv("STRIPE_SECRET_KEY")
+stripe.api_key = os.getenv("pk_test_51RAaFgCD34s5xyX8YjkvcUHdONFgm172NDQCSSY3H5IGv33aVClzL0Q9UhFz3acEgruatuiyds0M3fd7muP0EUWD00orMYRrKe")
 YOUR_DOMAIN = os.getenv("DOMAIN", "http://localhost:5000")
 
 @app.route("/")
